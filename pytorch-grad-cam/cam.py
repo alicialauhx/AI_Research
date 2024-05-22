@@ -111,7 +111,7 @@ if __name__ == '__main__':
                 "stingray.png", "tarantula.png", "tench.png", "tick.png", "turtle.png"] '''
     # for f in filenames:
         #rgb_img = cv2.imread(args.image_path, 1)[:, :, ::-1]
-    f = "scorpion.png"
+    f = "scorpion.png"  # replace with absolute path to any image you have 
     rgb_img = cv2.imread(os.path.join(directory, f))
     rgb_img = np.float32(rgb_img) / 255
     input_tensor = preprocess_image(rgb_img,
